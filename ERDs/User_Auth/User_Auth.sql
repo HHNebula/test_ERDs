@@ -1,23 +1,23 @@
 
 CREATE TABLE Auth
 (
-  User_ID  NOT NULL COMMENT '대표값',
-  Auth_ID  NOT NULL COMMENT '권한 대표값'
-) COMMENT '부여된 권한';
+  User_ID VARCHAR(200) NOT NULL COMMENT '사용자 대표값',
+  Auth_ID VARCHAR(200) NOT NULL COMMENT '권한 대표값'
+) COMMENT '사용자별 권한';
 
 CREATE TABLE Auth_Names
 (
-  Auth_ID    NOT NULL COMMENT '권한 대표값',
-  Auth_Name  NULL     COMMENT '접근 권한명',
+  Auth_ID   VARCHAR(200) NOT NULL COMMENT '권한 대표값',
+  Auth_Name VARCHAR(200) NULL     COMMENT '접근 권한명',
   PRIMARY KEY (Auth_ID)
-) COMMENT '권한명';
+) COMMENT '권한';
 
 CREATE TABLE User
 (
-  User_ID   NOT NULL COMMENT '대표값',
-  Name      NULL     COMMENT '이름',
-  Email     NULL     COMMENT '이메일',
-  Position  NULL     COMMENT '직책',
+  User_ID  VARCHAR(200) NOT NULL COMMENT '사용자 대표값',
+  Name     VARCHAR(200) NULL     COMMENT '사용자명',
+  Email    VARCHAR(200) NULL     COMMENT '이메일 주소',
+  Position VARCHAR(200) NULL     COMMENT '직책',
   PRIMARY KEY (User_ID)
 ) COMMENT '사용자';
 
