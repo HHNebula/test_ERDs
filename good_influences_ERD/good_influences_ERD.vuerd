@@ -1,0 +1,607 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "CITYS",
+        "comment": "도시코드",
+        "columns": [
+          {
+            "name": "CITY_CODE",
+            "comment": "광역시도 코드",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.9267578125,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "4bc41006-a1e6-4be4-ac7e-36f5e29b4578"
+          },
+          {
+            "name": "CITY_NAME",
+            "comment": "광역시도명",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.90380859375,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "b2ce4fde-9c47-4972-bd99-aac65d6811c3"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 66,
+          "top": 436,
+          "zIndex": 250,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d080546a-dadd-4827-b0fc-1dc69842897a"
+      },
+      {
+        "name": "OWNERS",
+        "comment": "사장님들",
+        "columns": [
+          {
+            "name": "OWNER_UID",
+            "comment": "사장님 유아이디",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.55322265625,
+              "widthComment": 97.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "e7b8427f-22c8-4068-861c-04d1a09c1656"
+          },
+          {
+            "name": "OWNER_NAME",
+            "comment": "사장님명",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.73046875,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "56a37a6c-dfd3-4e35-9f38-6d02891bc7f7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 66,
+          "top": 299,
+          "zIndex": 249,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "fb996675-d4d7-4bc3-b0a9-f581190b6c70"
+      },
+      {
+        "name": "SHOPS",
+        "comment": "상점들",
+        "columns": [
+          {
+            "name": "SHOP_UID",
+            "comment": "상점 유아이디",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4580078125,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "0e85f2b7-1092-4ec9-9103-d70dd1d71323"
+          },
+          {
+            "name": "SHOP_NAME",
+            "comment": "상점명",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78.63525390625,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "f1a063b2-2a5f-4bc3-8fca-54620be7d85a"
+          },
+          {
+            "name": "SHOP_CALL",
+            "comment": "상점 연락처",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.77685546875,
+              "widthComment": 71.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "b7a4e437-9c06-4115-8069-141911bc3afb"
+          },
+          {
+            "name": "SHOP_ADDRESS",
+            "comment": "상점 주소",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 97.46240234375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "fbee6482-0d0f-4c34-afb7-b043710d7e80"
+          },
+          {
+            "name": "SHOP_OP_HOURS",
+            "comment": "운영시간 정보",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 108.0947265625,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "4ea539c9-03ca-488b-a06a-b827c51d18c4"
+          },
+          {
+            "name": "DONATION_TARGET_1",
+            "comment": "기부 대상1",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 132.533203125,
+              "widthComment": 65.73046875,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "223ad773-9f10-4685-9416-830f8b9b26dc"
+          },
+          {
+            "name": "DONATION_TARGET_2",
+            "comment": "기부 대상2",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 132.533203125,
+              "widthComment": 65.73046875,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "337961bc-1021-4c2f-a475-7f5654be2afc"
+          },
+          {
+            "name": "IS_DONATION",
+            "comment": "기부 참여 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.42724609375,
+              "widthComment": 89.140625,
+              "widthDataType": 61.22998046875,
+              "widthDefault": 60
+            },
+            "id": "6bcff4ea-93ee-4ac0-9b8e-fa29906d5095"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 66,
+          "top": 41,
+          "zIndex": 248,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "1ee0d0cf-3f09-4ab2-a640-30bc7ea68e2b"
+      },
+      {
+        "name": "SHOPS_OWNERS",
+        "comment": "사장님과 상점 매칭",
+        "columns": [
+          {
+            "name": "OWNER_UID",
+            "comment": "사장님 유아이디",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 76.55322265625,
+              "widthComment": 97.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "0288a690-e122-491a-9d01-c98d2eecf964"
+          },
+          {
+            "name": "SHOP_UID",
+            "comment": "상점 유아이디",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 63.4580078125,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "68d190b7-b862-40fe-9176-fdbdd61a8fbe"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 780,
+          "top": 137,
+          "zIndex": 252,
+          "widthName": 102.65478515625,
+          "widthComment": 115.140625
+        },
+        "visible": true,
+        "id": "15bbaa23-04c8-4ddb-8466-ea8611e04a26"
+      },
+      {
+        "name": "CITYS_SHOPS",
+        "comment": "상점과 광역시도 매칭",
+        "columns": [
+          {
+            "name": "CITY_CODE",
+            "comment": "광역시도 코드",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.9267578125,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "3350b5f6-261a-4510-ae4b-d2649a5d8c8e"
+          },
+          {
+            "name": "SHOP_UID",
+            "comment": "상점 유아이디",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 63.4580078125,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "3ca16fea-8e2b-467c-ac49-94dcdb69b136"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 783,
+          "top": 289,
+          "zIndex": 251,
+          "widthName": 81.64404296875,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "a2067293-d195-4e5b-9dcd-55ece04d40dd"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "fb996675-d4d7-4bc3-b0a9-f581190b6c70",
+          "columnIds": [
+            "e7b8427f-22c8-4068-861c-04d1a09c1656"
+          ],
+          "x": 511.59375,
+          "y": 354,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "15bbaa23-04c8-4ddb-8466-ea8611e04a26",
+          "columnIds": [
+            "0288a690-e122-491a-9d01-c98d2eecf964"
+          ],
+          "x": 780,
+          "y": 219.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_owners_to_shops_owners",
+        "visible": true,
+        "id": "054378e3-0d80-4206-8ebb-33bcee6b1f86"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1ee0d0cf-3f09-4ab2-a640-30bc7ea68e2b",
+          "columnIds": [
+            "0e85f2b7-1092-4ec9-9103-d70dd1d71323"
+          ],
+          "x": 543.966796875,
+          "y": 99.25,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "15bbaa23-04c8-4ddb-8466-ea8611e04a26",
+          "columnIds": [
+            "68d190b7-b862-40fe-9176-fdbdd61a8fbe"
+          ],
+          "x": 780,
+          "y": 164.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_shops_to_shops_owners",
+        "visible": true,
+        "id": "7332f85d-1b09-430d-9520-86fb17aa84e2"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d080546a-dadd-4827-b0fc-1dc69842897a",
+          "columnIds": [
+            "4bc41006-a1e6-4be4-ac7e-36f5e29b4578"
+          ],
+          "x": 477.76708984375,
+          "y": 491,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "a2067293-d195-4e5b-9dcd-55ece04d40dd",
+          "columnIds": [
+            "3350b5f6-261a-4510-ae4b-d2649a5d8c8e"
+          ],
+          "x": 783,
+          "y": 371.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_citys_to_citys_shops",
+        "visible": true,
+        "id": "5e791169-6bae-4006-9284-0c3ed57576d3"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1ee0d0cf-3f09-4ab2-a640-30bc7ea68e2b",
+          "columnIds": [
+            "0e85f2b7-1092-4ec9-9103-d70dd1d71323"
+          ],
+          "x": 543.966796875,
+          "y": 215.75,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "a2067293-d195-4e5b-9dcd-55ece04d40dd",
+          "columnIds": [
+            "3ca16fea-8e2b-467c-ac49-94dcdb69b136"
+          ],
+          "x": 783,
+          "y": 316.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_shops_to_citys_shops",
+        "visible": true,
+        "id": "af617378-282e-49ce-9497-0788c943ebd2"
+      }
+    ]
+  }
+}
