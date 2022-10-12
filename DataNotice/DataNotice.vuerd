@@ -70,29 +70,6 @@
             "id": "821c9e8b-d3b6-4c95-9f3b-1bc1e40e8650"
           },
           {
-            "name": "WRITER_UID",
-            "comment": "작성자 UID",
-            "dataType": "VARCHAR(255)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 74.92822265625,
-              "widthComment": 67.53955078125,
-              "widthDataType": 89.29296875,
-              "widthDefault": 60
-            },
-            "id": "e537d823-b81b-4eea-8f83-bfdd4a0d5ba3"
-          },
-          {
             "name": "TITLE",
             "comment": "글 제목",
             "dataType": "VARCHAR(255)",
@@ -162,7 +139,7 @@
             "id": "dd6b4395-f943-4861-8d3e-33b872a3102e"
           },
           {
-            "name": "ATTACHED_FILE",
+            "name": "IS_ATTACHED",
             "comment": "첨부파일 여부",
             "dataType": "BOOLEAN",
             "default": "",
@@ -177,109 +154,47 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 93.2158203125,
+              "widthName": 80.83154296875,
               "widthComment": 84.5703125,
               "widthDataType": 61.22998046875,
               "widthDefault": 60
             },
             "id": "cc87baed-2d6c-46c7-8ffd-d11c45442f79"
+          },
+          {
+            "name": "IS_NOTICE",
+            "comment": "공지 등록 여부",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.8994140625,
+              "widthComment": 89.140625,
+              "widthDataType": 61.22998046875,
+              "widthDefault": 60
+            },
+            "id": "be71bf3f-4c21-4b62-a357-74705e8ee404"
           }
         ],
         "ui": {
           "active": false,
-          "left": 59.0889,
-          "top": 48,
-          "zIndex": 44,
+          "left": 39.8889,
+          "top": 37.6,
+          "zIndex": 112,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "407434a6-1376-4dc4-85d8-888ed4f22149"
-      },
-      {
-        "name": "NOTICE",
-        "comment": "공지사항",
-        "columns": [
-          {
-            "name": "NOTICE_UID",
-            "comment": "공지사항 UID",
-            "dataType": "VARCHAR(255)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 74.2998046875,
-              "widthComment": 80.53955078125,
-              "widthDataType": 89.29296875,
-              "widthDefault": 60
-            },
-            "id": "f1139493-195c-452c-90ec-7c95d9629c79"
-          },
-          {
-            "name": "POST_UID",
-            "comment": "게시글 UID",
-            "dataType": "VARCHAR(255)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60.97607421875,
-              "widthComment": 67.53955078125,
-              "widthDataType": 89.29296875,
-              "widthDefault": 60
-            },
-            "id": "161d5f5d-bd65-4bda-b888-0286c174c630"
-          },
-          {
-            "name": "EXPOSURE_NUM",
-            "comment": "공지 노출 순서",
-            "dataType": "INTEGER",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 101.44873046875,
-              "widthComment": 89.140625,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "5aed2c5c-3e07-4568-9d24-34f8dc74efb3"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 361.7334,
-          "top": 425.5786,
-          "zIndex": 45,
-          "widthName": 60,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "1cc8f4a0-62e0-476a-82db-f21b1ca655f6"
       },
       {
         "name": "WRITER",
@@ -334,14 +249,76 @@
         ],
         "ui": {
           "active": false,
-          "left": 660.9332,
-          "top": 155.6669,
-          "zIndex": 46,
+          "left": 40.9332,
+          "top": 275.6669,
+          "zIndex": 113,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "65ed7dac-a67b-4153-ab25-56425027309c"
+      },
+      {
+        "name": "POST_WRITER",
+        "comment": "게시글과 작성자",
+        "columns": [
+          {
+            "name": "WRITER_UID",
+            "comment": "작성자 UID",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.92822265625,
+              "widthComment": 67.53955078125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c98b03f4-1c5a-473d-972b-2e1fc6fbb2f5"
+          },
+          {
+            "name": "POST_UID",
+            "comment": "게시글 UID",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60.97607421875,
+              "widthComment": 67.53955078125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "16b4d68a-1ed7-4796-a74d-84ed949f3e54"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 596.8,
+          "top": 172.8,
+          "zIndex": 115,
+          "widthName": 84.4306640625,
+          "widthComment": 97.5703125
+        },
+        "visible": true,
+        "id": "d83cd3f0-a2a2-4022-a6a2-97785be76ed0"
       }
     ],
     "indexes": []
@@ -356,52 +333,52 @@
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "407434a6-1376-4dc4-85d8-888ed4f22149",
+          "tableId": "65ed7dac-a67b-4153-ab25-56425027309c",
           "columnIds": [
-            "821c9e8b-d3b6-4c95-9f3b-1bc1e40e8650"
+            "307b23cd-9d63-4f52-82d4-f0446528d140"
           ],
-          "x": 276.12845078125,
-          "y": 240,
-          "direction": "bottom"
+          "x": 456.72470390625,
+          "y": 330.6669,
+          "direction": "right"
         },
         "end": {
-          "tableId": "1cc8f4a0-62e0-476a-82db-f21b1ca655f6",
+          "tableId": "d83cd3f0-a2a2-4022-a6a2-97785be76ed0",
           "columnIds": [
-            "161d5f5d-bd65-4bda-b888-0286c174c630"
+            "c98b03f4-1c5a-473d-972b-2e1fc6fbb2f5"
           ],
-          "x": 361.7334,
-          "y": 490.8286,
+          "x": 596.8,
+          "y": 255.3,
           "direction": "left"
         },
-        "constraintName": "fk_post_to_notice",
+        "constraintName": "fk_writer_to_post_writer",
         "visible": true,
-        "id": "310f554c-ad18-4197-b02c-9f8a027e7fbf"
+        "id": "d3984890-6661-4150-b99c-15f7f8c8d4a7"
       },
       {
         "identification": false,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "65ed7dac-a67b-4153-ab25-56425027309c",
-          "columnIds": [
-            "307b23cd-9d63-4f52-82d4-f0446528d140"
-          ],
-          "x": 660.9332,
-          "y": 210.6669,
-          "direction": "left"
-        },
-        "end": {
           "tableId": "407434a6-1376-4dc4-85d8-888ed4f22149",
           "columnIds": [
-            "e537d823-b81b-4eea-8f83-bfdd4a0d5ba3"
+            "821c9e8b-d3b6-4c95-9f3b-1bc1e40e8650"
           ],
-          "x": 493.1680015625,
-          "y": 144,
+          "x": 476.66575546875,
+          "y": 133.6,
           "direction": "right"
         },
-        "constraintName": "fk_writer_to_post",
+        "end": {
+          "tableId": "d83cd3f0-a2a2-4022-a6a2-97785be76ed0",
+          "columnIds": [
+            "16b4d68a-1ed7-4796-a74d-84ed949f3e54"
+          ],
+          "x": 596.8,
+          "y": 200.3,
+          "direction": "left"
+        },
+        "constraintName": "fk_post_to_post_writer",
         "visible": true,
-        "id": "47893e59-29ba-463a-aec6-9c5f21cda569"
+        "id": "ab346fba-45ca-470e-bab0-da36d4d8a3b8"
       }
     ]
   }
