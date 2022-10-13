@@ -1,0 +1,166 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "BICYCLE PARTS",
+        "comment": "자전거 부품들",
+        "columns": [
+          {
+            "name": "PRODUCT_ID",
+            "comment": "부품 UID",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.28271484375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "05fc3dba-19ef-4a45-b401-8406ae5219bc"
+          },
+          {
+            "name": "PRODUCT_NAME",
+            "comment": "부품명",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103.59423828125,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "caeb70b4-81fe-4a17-b197-b0be1347494f"
+          },
+          {
+            "name": "PARENT_PRODUCT_ID",
+            "comment": "상위 부품 UID",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 131.24462890625,
+              "widthComment": 85.10986328125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "e4199880-dbb7-4397-85d9-aea5a0d189c5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 199,
+          "top": 98,
+          "zIndex": 41,
+          "widthName": 90.6005859375,
+          "widthComment": 84.5703125
+        },
+        "visible": true,
+        "id": "dca0082c-148d-4473-afd2-0a6cc0cedb19"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "dca0082c-148d-4473-afd2-0a6cc0cedb19",
+          "columnIds": [
+            "05fc3dba-19ef-4a45-b401-8406ae5219bc"
+          ],
+          "x": 651.6474609375,
+          "y": 98,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "dca0082c-148d-4473-afd2-0a6cc0cedb19",
+          "columnIds": [
+            "e4199880-dbb7-4397-85d9-aea5a0d189c5"
+          ],
+          "x": 671.6474609375,
+          "y": 118,
+          "direction": "right"
+        },
+        "constraintName": "fk_bicycle parts_to_bicycle parts",
+        "visible": true,
+        "id": "5c0c4b25-7ae7-4037-8cb2-aeb61262cd81"
+      }
+    ]
+  }
+}
