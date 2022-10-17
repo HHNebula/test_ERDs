@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -75,
-    "scrollLeft": -319,
-    "zoomLevel": 1,
+    "scrollTop": -425,
+    "scrollLeft": -278,
+    "zoomLevel": 0.7,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -250,8 +250,8 @@
         "ui": {
           "active": false,
           "left": 1249.9333,
-          "top": 496.2435,
-          "zIndex": 47,
+          "top": 497.2435,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -451,7 +451,7 @@
           "active": false,
           "left": 114.7319,
           "top": 406.4689,
-          "zIndex": 5,
+          "zIndex": 3,
           "widthName": 74.6298828125,
           "widthComment": 60
         },
@@ -628,7 +628,7 @@
           "active": false,
           "left": 857.3297,
           "top": 150.8572,
-          "zIndex": 45,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -736,7 +736,7 @@
           "active": false,
           "left": 677.5945,
           "top": 729.5522,
-          "zIndex": 4,
+          "zIndex": 2,
           "widthName": 67.6728515625,
           "widthComment": 60
         },
@@ -821,7 +821,7 @@
           "active": false,
           "left": 138.3431,
           "top": 832.976,
-          "zIndex": 37,
+          "zIndex": 5,
           "widthName": 100.2744140625,
           "widthComment": 67
         },
@@ -846,7 +846,7 @@
             "41890f6a-80fd-4af2-9dab-cf1cb79a2e52"
           ],
           "x": 1249.9333,
-          "y": 517.9935,
+          "y": 518.9935,
           "direction": "left"
         },
         "end": {
@@ -950,7 +950,7 @@
             "41890f6a-80fd-4af2-9dab-cf1cb79a2e52"
           ],
           "x": 1249.9333,
-          "y": 561.4935,
+          "y": 562.4935,
           "direction": "left"
         },
         "end": {
@@ -1002,7 +1002,7 @@
             "41890f6a-80fd-4af2-9dab-cf1cb79a2e52"
           ],
           "x": 1249.9333,
-          "y": 604.9935,
+          "y": 605.9935,
           "direction": "left"
         },
         "end": {
@@ -1054,7 +1054,7 @@
             "41890f6a-80fd-4af2-9dab-cf1cb79a2e52"
           ],
           "x": 1680.9479484375,
-          "y": 496.2435,
+          "y": 497.2435,
           "direction": "top"
         },
         "end": {
@@ -1063,7 +1063,7 @@
             "90e4fe3a-f3da-4216-92bb-06d873732da7"
           ],
           "x": 1700.9479484375,
-          "y": 516.2435,
+          "y": 517.2435,
           "direction": "right"
         },
         "constraintName": "fk_boards_to_boards",
