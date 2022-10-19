@@ -43,7 +43,7 @@
   "table": {
     "tables": [
       {
-        "name": "User",
+        "name": "Users",
         "comment": "사용자",
         "columns": [
           {
@@ -143,7 +143,7 @@
           "active": false,
           "left": 36,
           "top": 37,
-          "zIndex": 103,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60,
           "color": "#54E6FF"
@@ -152,7 +152,7 @@
         "id": "dde10a98-1294-4386-83ef-ba2bb87eeda7"
       },
       {
-        "name": "Auth",
+        "name": "Auths",
         "comment": "사용자별 권한",
         "columns": [
           {
@@ -206,7 +206,7 @@
           "active": false,
           "left": 585,
           "top": 155,
-          "zIndex": 107,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 84.5703125,
           "color": "#FFEB3B"
@@ -269,7 +269,7 @@
           "active": false,
           "left": 36,
           "top": 254,
-          "zIndex": 105,
+          "zIndex": 2,
           "widthName": 76.34375,
           "widthComment": 60,
           "color": "#FF8888"
